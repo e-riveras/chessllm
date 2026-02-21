@@ -14,8 +14,9 @@ echo "    Config: $CONFIG"
 echo "    Extra args: $*"
 echo ""
 
-python -m mlx_lm.lora \
+mlx_lm.lora \
   --config "$CONFIG" \
+  --train \
   "$@"
 
 echo ""
