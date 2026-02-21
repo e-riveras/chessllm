@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ML / model artifacts
+models/
+data/raw/
+data/processed/
+checkpoints/
+adapters/
+*.npz
+*.safetensors
+*.gguf
+*.ggml
+
+# HuggingFace cache
+.cache/
+
+# Conda temp files
+condaenv.*.requirements.txt
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Logs
+*.log
+runs/
+wandb/

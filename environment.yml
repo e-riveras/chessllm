@@ -1,0 +1,21 @@
+name: chessllm
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      # MLX — Apple Silicon optimized ML framework
+      - mlx>=0.22.0
+      - mlx-lm>=0.21.0       # LLM fine-tuning + inference on MLX
+
+      # Chess utilities
+      - python-chess>=1.10   # PGN/FEN parsing, board logic
+
+      # Data / HuggingFace ecosystem
+      - datasets>=2.20
+      - huggingface_hub>=0.24
+      - tqdm
+      - rich
+      - pyyaml
